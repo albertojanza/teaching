@@ -5,46 +5,27 @@ div.cleaner{ clear:both; }
 div.wrapper{width:960px; margin: 0px auto;}
 
 /* HEADER*/
-div.header{height:100px;background:url('images/header_line.png'); padding:0px;margin-bottom:10px;
+div.header{height:112px;background:url('images/header_line.png'); padding:0px;margin-bottom:10px;}
+/*-moz-box-shadow: 0px 0px 5px #888; -webkit-box-shadow: 0 0 5px#888; box-shadow: 0 0 5px #888;*/
+div.header_top{height:80px; padding:0px}
+div.header_bottom_shadow{background:url('images/shadow-bottom.png'); height:12px; width:100%;}
+ul.menu { height:20px;list-style-image: none; list-style-type: none; }
+ul.menu li {height:100%;float: left; color:white; margin:0px; padding: 0px 5px;} /*margin: 10px 3px 0px 10px; padding: 0px;} */
+ul.menu li.select {height:32px;float: left; background:  white;
 
 
--moz-box-shadow: 0px 0px 5px #888;
+/*-moz-box-shadow: inset 2px 2px 2px #888,inset -2px -2px 2px white;
 -webkit-box-shadow: 0 0 5px#888;
-box-shadow: 0 0 5px #888;
-}
-div.header_top{height:69px; padding:0px}
-
-ul.menu { height:29px;list-style-image: none; list-style-type: none; }
-ul.menu li {height:100%;float: left; color:white; margin:0px; padding: 5px 5px 0px 5px;
-} /*margin: 10px 3px 0px 10px; padding: 0px;} */
-ul.menu li.select {float: left; color:white;
-
-
--moz-box-shadow: inset 2px 2px 2px #888,inset -2px -2px 2px white;
--webkit-box-shadow: 0 0 5px#888;
-box-shadow: 0 0 5px #888;
+box-shadow: 0 0 5px #888;*/
     -moz-border-radius: 3px 3px 0 0;
-    background:  white;
-} /*
+    
+} 
 
 
-    background: none repeat scroll 0 0 white;
-margin: 10px 3px 0px 10px; padding: 0px;} */
-ul.menu li a {font-size: 0.923em;text-decoration:none;
-    border-color: #FEC951;
-    color: white;
-    text-shadow: none ;
-
-
-
-} /* font-weight:bold;*/
-ul.menu li.select a {
-color:#246487 !important;
-} /* font-weight:bold;*/
-
+ul.menu li a {font-size: 0.923em;text-decoration:none; border-color: #FEC951; color: white; text-shadow: none ; } /* font-weight:bold;*/
+ul.menu li.select a {color:#246487 !important;} /* font-weight:bold;*/
 ul.menu li a:hover {color:yellow;}
 div#logo{}
-
 
 /*SERVICE*/
 div#service{min-height:450px;  padding-bottom:50px; }
