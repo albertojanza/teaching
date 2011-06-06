@@ -1,0 +1,16 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  google_search_button: "Buscar"
+  message_title: "Letras de músicas"
+  message_text: "Nós estamos tentando reunir o maior acervo de letras de música. Ajude-nos."
+
+# breadcrumbs
+  bc_home: "Home"
+
+# h1
+
+# titles in the head section of each page and descriptions
+  title_page_welcome: "Hablando español"
+  description_page_welcome: "Aprende español. Aquí encontrarás cursos de español con gramática, vocabulario, podcasts, ejercicios, exámenes, e información sobre la cultura hispana: música, viajes y recetas."

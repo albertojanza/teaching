@@ -1,0 +1,73 @@
+div.cleaner{ clear:both; }
+
+
+/* LAYOUT width */
+div.wrapper{width:960px; margin: 0px auto;}
+
+/* HEADER*/
+div.header{height:100px;background:url('images/header_line.png'); padding:0px;margin-bottom:10px;
+
+
+-moz-box-shadow: 0px 0px 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+div.header_top{height:69px; padding:0px}
+
+ul.menu { height:29px;list-style-image: none; list-style-type: none; }
+ul.menu li {height:100%;float: left; color:white; margin:0px; padding: 5px 5px 0px 5px;
+} /*margin: 10px 3px 0px 10px; padding: 0px;} */
+ul.menu li.select {float: left; color:white;
+
+
+-moz-box-shadow: inset 2px 2px 2px #888,inset -2px -2px 2px white;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+    -moz-border-radius: 3px 3px 0 0;
+    background:  white;
+} /*
+
+
+    background: none repeat scroll 0 0 white;
+margin: 10px 3px 0px 10px; padding: 0px;} */
+ul.menu li a {font-size: 0.923em;text-decoration:none;
+    border-color: #FEC951;
+    color: white;
+    text-shadow: none ;
+
+
+
+} /* font-weight:bold;*/
+ul.menu li.select a {
+color:#246487 !important;
+} /* font-weight:bold;*/
+
+ul.menu li a:hover {color:yellow;}
+div#logo{}
+
+
+/*SERVICE*/
+div#service{min-height:450px;  padding-bottom:50px; }
+div#main{float:left;width:640px;}
+div#sidebar{float:left;width:311px;border-width: 0 0 0 1px; border-style:solid; border-color:#dcd9d9;padding: 0px 4px;}
+div#main_left{float:left;width:312px;padding: 0px 4px;}
+div#main_right{float:left;width:311px;border-width: 0 0 0 1px; border-style:solid; border-color:#dcd9d9;padding: 0px 4px;}
+
+/* main*/
+div.box_small_news{font-size: 1em; line-height: 1em;padding-bottom:10px;}
+
+div.box_small_news div.news_header { border-width: 5px 0 0 0; border-style:solid; border-color:#dcd9d9;padding-bottom:5px;}
+div.box_small_news div.news_header a {line-height:95%; font-size: 0.823em; text-decoration:none;color: black;}
+div.news_header_text{float:right;}
+div.box_small_news h2  { margin:0px;}
+div.box_small_news h2 a { line-height:95%; font-size: 0.923em; text-decoration:none;color: #246487;}
+div.box_small_news h2 a:hover {text-decoration: underline;}
+div.box_small_news p { margin: 5px 0px; line-height: 1em; color: #333; font-size: 0.90em;}
+div.box_small_news ul  { margin-left:10px;}
+div.box_small_news h3  { margin:0px;}
+div.box_small_news h3 a { line-height:95%; font-size: 0.723em; font-weight:normal; text-decoration:none;color: #246487;}
+div.box_small_news h3 a:hover {text-decoration: underline;}
+
+/* sidebar */
+div.advertisement{ width:300px; margin: 0px auto;margin-bottom:5px;}
+

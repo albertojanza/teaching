@@ -1,0 +1,18 @@
+/* LAYOUT width */
+div.wrapper{width:960px; margin: 0px auto;}
+
+/* HEADER*/
+div.header{height:100px;background:#323232; }
+div.header_top{height:60px; padding:2px}
+
+ul.menu { height:40px;list-style-image: none; list-style-type: none; }
+ul.menu li {float: left; color:white;margin: 5px 0px 0px 0px; padding: 0px;}
+ul.menu li a {font-size: 0.923em;color:white;text-decoration:none} /* font-weight:bold;*/
+ul.menu li a:hover {color:yellow;}
+div#logo{}
+
+
+/*SERVICE*/
+div.container_service{min-height:450px;  border-right: 1px solid #F8D700;border-left: 1px solid #F8D700;margin-left:10px;margin-right:10px;padding-bottom:50px; }
+div.service{padding:2px; }
+
