@@ -16,21 +16,25 @@
 
 </head>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-23674451-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 <body>
+
+
+  <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->	
+  <div id="modal-wrapper">
+      <div id="modal-screen">
+          <div id="modal-content">
+    <%= link_to_function "cerrar_ventanita", "hide_modal('#needed_login')" %>
+    <%# render :partial => "/session/new"  %>
+
+  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+
+
+              adsfsdf
+          </div>
+      </div>
+  </div>
+
 
 <div class="wrapper">
     <div class="header">
@@ -38,6 +42,14 @@
             <div id="logo">
             <%= link_to image_tag("logo.png", :alt => "Hablando español"), root_path %>
             </div>
+            <% unless current_user # TODO no logado %>
+                <ul class="menu" id="head_menu_right">
+                    <li><%= link_to_function "Entra", "show_modal('#needed_login')" %></li>
+                    <li><%= link_to_function "Regístrate", "show_modal('#needed_login')" %></li>
+                </ul>
+            <% else %>
+              TODO name: <%= current_user.name %>
+            <% end %> 
         </div>
         <ul class="menu">
             <li>  
@@ -64,14 +76,15 @@
             <li>  
                 <%= link_to "Podcast", root_path %>
             </li>
-            <li>  
-        <%= form_tag '/', {:onSubmit => 'return GoogleSearch(); return false;'} do -%>
-            <%= text_field_tag 'q','', :size => 28 %>
-            <%= submit_tag I18n.t "google_search_button" %>
-        <% end -%>
-            </li>
         </ul>
+        <div id="google_search_menu">
+            <%= form_tag '/', {:onSubmit => 'return GoogleSearch(); return false;'} do -%>
+                <%= text_field_tag 'q','', :size => 28 %>
+              <%= submit_tag I18n.t "google_search_button" %>
+            <% end -%>
+        </div>
 
+      <div class="cleaner"></div>
       <div class="header_bottom_shadow"></div>
     </div>
 
@@ -87,8 +100,8 @@
 </div>
 
 <!-- this divider is not in a wrapper divider because it has a fixed position -->
-<div class="bottom">
     <div class="breadcrumbs"> <%= yield :breadcrumbs %></div>
+<div id="bottom">
 </div>
 
 </body>
